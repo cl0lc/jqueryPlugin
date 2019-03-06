@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>treeList</title>
+</head>
+
+<body>
+    <ul class="treeList"></ul>
+    <div>
+        <p>此次更改的值</p>
+        <p class="value"></p>
+    </div>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-treeList.js"></script>
+    <script type="text/javascript">
+    var data = [{
+        name: '游戏',
+        children: [{
+            name: '英雄联盟',
+            value: 'LOL'
+        }, {
+            name: '地下城与勇士',
+            value: 'DNF'
+        }, {
+            name: '穿越火线',
+            value: 'CF'
+        }]
+    }, {
+        name: '小说',
+        children: [{
+            name: '玄幻',
+            children: [{
+                name: '斗罗大陆',
+                value: 'DLDL'
+            }, {
+                name: '斗破苍穹',
+                value: 'DPCQ'
+            }]
+        }, {
+            name: '仙侠',
+            children: [{
+                name: '凡人修仙传',
+                value: 'FRXXZ'
+            }]
+        }]
+    }, {
+        name: '美食',
+        children: [{
+            name: '湘菜',
+            value: 'XC'
+        }, {
+            name: '粤菜',
+            value: 'YC'
+        }]
+    }];
+    $('.treeList').treeList({data: data}, function(data){
+        $('.value').html(JSON.stringify(data));
+    });
+    </script>
+</body>
+
+</html>
