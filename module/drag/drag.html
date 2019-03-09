@@ -36,7 +36,7 @@
 	</style>
 </head>
 <body>
-	<div>点击蓝色区域拖动,限制在红色区域</div>
+	<div>鼠标在蓝色区域按住，拖动面板，限制在红色区域</div>
 	<div class="container">
 		<div class="panel">
 			<div class="panelHeader"></div>
@@ -46,7 +46,6 @@
 	<script type="text/javascript" src="jquery-drag.js"></script>
 	<script type="text/javascript">
 		$('.panel').drag({
-			panel: '.panel',
 			handle: '.panelHeader',
 			container: '.container'
 		});
