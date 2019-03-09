@@ -1,8 +1,8 @@
 /**
  * 树状图
  * @param  {[type]} opts [description]
- *     cb         回调函数，传递改变checkBox的state和value
- *     opts.data  树状图数据
+ *     cb         回调函数，checkbox之变后调用，传递改变checkBox的state和value
+ *     opts.data  文件树数据
  *     opts.key   配置数据中对象的键值
  *       opts.key.name      checkbox后面说明文字对应的键
  *       opts.key.value     checkbox的value对应的键
