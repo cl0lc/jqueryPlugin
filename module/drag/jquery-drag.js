@@ -1,8 +1,9 @@
 /**
  * 拖动
- * @param  {[type]} opts [description]
+ * 	ps: 面板和容器在定位关系上是必须得是相对关系
+ * @param  {Object} opts [description]
  *     opts.handle 拖动行为触发dom的选择器
- *     opts.container 拖动范围限制的dom的选择器，默认body, 容器要指明width、height
+ *     opts.container 拖动范围限制的dom的选择器，默认body.
  * @return {[type]}      [description]
  */
 $.fn.drag = function(opts){
