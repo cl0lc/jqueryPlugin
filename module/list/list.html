@@ -25,10 +25,14 @@
     <script src="../jquery.min.js"></script>
     <script src="jquery-list.js"></script>
     <script>
-    	var data = [{person: {name: '张三', age: 18}}];
-    	$('.list').list(data, function(data){
-    		console.log(data);
-    	})
+    	var data = [{person: {name: '张三', age: 18}},{person: {name: '张三'}}];
+    	$('.list').list({
+            data: data,
+            removeNull: true,
+            fn: function(data){
+                console.log(data);
+            }
+        })
     </script>
 </body>
 
