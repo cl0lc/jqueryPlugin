@@ -1,6 +1,6 @@
 /**
  * 拖动
- * 	ps: 面板和容器在定位关系上是必须得是相对关系
+ * 	ps: 要想将面板控制在指定内容器移动，面板和容器在定位关系就必须得是相对关系
  * @param  {Object} opts [description]
  *     opts.handle 拖动行为触发dom的选择器
  *     opts.container 拖动范围限制的dom的选择器，默认body.
@@ -18,6 +18,7 @@ $.fn.drag = function(opts){
 			state = false,
 			x = 0,
 			y = 0;
+		handle.css('cursor', 'move');
 		handle.mousedown(function(e){
 			var position = panel.position();
 			state = true;
