@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>分页</title>
+  <style>
+    .item-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .item-info-name {
+      width: 80px;
+    }
+
+    .item-info-text {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="list"></ul>
+  <script type="text/javascript" src="../jquery.min.js"></script>
+  <script type="text/javascript" src="jquery-pagination.js"></script>
+  <script type="text/html" id="list">
+    <li class="item">
+      <div class="item-info">
+        <span class="item-info-name">姓名：</span>
+        <p class="item-info-text">{{name}}</p>
+      </div>
+      <div class="item-info">
+        <span class="item-info-name">年龄：</span>
+        <p class="item-info-text">{{age}}</p>
+      </div>
+      <div class="item-info">
+        <span class="item-info-name">性别：</span>
+        <p class="item-info-text">{{sex}}</p>
+      </div>
+    </li>
+  </script>
+  <script>
+    $(function () {
+      $('.list').pagination({
+        tmpl: '#list',
+        serve: false,
+        limit: 2,
+        data: [{
+          name: '张三',
+          age: 20,
+          sex: '男'
+        }, {
+          name: '李四',
+          age: 24,
+          sex: '男'
+        }, {
+          name: '赵春花',
+          age: 18,
+          sex: '女'
+        }, {
+          name: '张三',
+          age: 20,
+          sex: '男'
+        }, {
+          name: '李四',
+          age: 24,
+          sex: '男'
+        }, {
+          name: '赵春花',
+          age: 18,
+          sex: '女'
+        }, {
+          name: '张三',
+          age: 20,
+          sex: '男'
+        }, {
+          name: '李四',
+          age: 24,
+          sex: '男'
+        }, {
+          name: '赵春花',
+          age: 18,
+          sex: '女'
+        }, {
+          name: '张三',
+          age: 20,
+          sex: '男'
+        }, {
+          name: '李四',
+          age: 24,
+          sex: '男'
+        }, {
+          name: '赵春花',
+          age: 18,
+          sex: '女'
+        }, {
+          name: '张三',
+          age: 20,
+          sex: '男'
+        }, {
+          name: '李四',
+          age: 24,
+          sex: '男'
+        }, {
+          name: '赵春花',
+          age: 18,
+          sex: '女'
+        }]
+      })
+    })
+  </script>
+</body>
+
+</html>
