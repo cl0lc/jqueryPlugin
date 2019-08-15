@@ -1,47 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>jqueryPlugin</title>
-	<style>
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		.moduleList{
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			width: 200px;
-			padding: 20px 0 0 10px;
-			box-sizing: border-box;
-			border-right:  1px solid #ccc;
-		}
-		.page{
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 200px;
-			right: 0;
-		}
-		.page iframe{
-			position: absolute;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <title>jqueryPlugin</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .moduleList {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    padding: 20px 0 0 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+  }
+
+  .page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+  }
+
+  .page iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  </style>
 </head>
+
 <body>
-	<ul class="moduleList">
-		<li><a href="module/drag/drag.html" target="page">拖动</a></li>
-		<li><a href="module/paging/paging.html" target="page">分页</a></li>
-		<li><a href="module/treeList/treeList.html" target="page">文件树</a></li>
-		<li><a href="module/list/list.html" target="page">列表</a></li>
-	</ul>
-	<div class="page">
-		<iframe src="" name="page" frameborder="0"></iframe>
-	</div>
+  <ul class="moduleList">
+    <li><a href="module/drag/drag.html" target="page">拖动</a></li>
+    <li><a href="module/pagination/pagination.html" target="page">分页</a></li>
+    <li><a href="module/treeList/treeList.html" target="page">文件树</a></li>
+  </ul>
+  <div class="page">
+    <iframe name="page" frameborder="0"></iframe>
+  </div>
 </body>
+
 </html>
